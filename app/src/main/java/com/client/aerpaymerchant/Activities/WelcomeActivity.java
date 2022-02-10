@@ -14,9 +14,6 @@ import android.widget.TextView;
 
 import androidx.viewpager.widget.ViewPager;
 
-import com.client.aerpaymerchant.Fragments.WelcomeFrg1;
-import com.client.aerpaymerchant.Fragments.WelcomeFrg2;
-import com.client.aerpaymerchant.Fragments.WelcomeFrg3;
 import com.client.aerpaymerchant.R;
 import com.client.aerpaymerchant.adapters.SliderAdapter;
 import com.client.aerpaymerchant.adapters.ViewPagerAdapter;
@@ -60,7 +57,9 @@ public class WelcomeActivity extends BaseActivity {
         next_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(WelcomeActivity.this, SignupActivity.class));
+                if (isAlreadyLogin())
+                    startActivity(new Intent(WelcomeActivity.this, HomeActivity.class));
+                else startActivity(new Intent(WelcomeActivity.this, SignupActivity.class));
                 finish();
             }
         });
@@ -69,7 +68,9 @@ public class WelcomeActivity extends BaseActivity {
     }
 
     public void skip(View view) {
-        startActivity(new Intent(this, SignupActivity.class));
+        if (isAlreadyLogin())
+            startActivity(new Intent(WelcomeActivity.this, HomeActivity.class));
+        else startActivity(new Intent(WelcomeActivity.this, SignupActivity.class));
         finish();
     }
 

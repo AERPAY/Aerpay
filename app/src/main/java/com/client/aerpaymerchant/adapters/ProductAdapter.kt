@@ -19,7 +19,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialog
 
 class ProductAdapter(
     val activity: Activity,
-    private val list: ArrayList<ProductDetails> = arrayListOf(),
+    private var list: ArrayList<ProductDetails> = arrayListOf(),
    val  onDelete : (Int,String) -> Unit
 ) : RecyclerView.Adapter<ProductAdapter.MyView>() {
     private lateinit var dialog: BottomSheetDialog
@@ -40,8 +40,7 @@ class ProductAdapter(
 
 
     fun setList(mlist: ArrayList<ProductDetails>){
-        list.clear();
-        list.addAll(mlist);
+        list= mlist;
         notifyDataSetChanged()
     }
     // Override onCreateViewHolder which deals

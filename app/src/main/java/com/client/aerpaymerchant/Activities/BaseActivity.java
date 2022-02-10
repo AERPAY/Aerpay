@@ -50,4 +50,11 @@ public class BaseActivity extends AppCompatActivity {
        return new PreferenceProvider(this).getStoreID();
     }
 
+    boolean isAlreadyLogin(){
+        User user = getUser();
+        if (user != null ){
+            return true;
+        }else
+            return false;
+    }
 }

@@ -9,8 +9,8 @@ public class MyApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        new PreferenceProvider(this.getApplicationContext());
 
+        new PreferenceProvider(this.getApplicationContext());
 
     }
 }
