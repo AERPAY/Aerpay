@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:id="@+id/sign_up_f"
@@ -21,14 +19,12 @@
             android:layout_width="match_parent"
             android:layout_height="0dp">
 
-            <TextView
-                android:gravity="center"
-                android:textColor="@android:color/white"
-                android:text="Map will render here"
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent" />
 
-            </TextView>
 
         </LinearLayout>
 
@@ -49,6 +45,7 @@
             </TextView>
 
             <EditText
+                android:id="@+id/et_place"
                 android:drawableLeft="@drawable/ic_circle"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:padding="@dimen/_7sdp"
@@ -57,13 +54,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="44dp"
                 android:layout_gravity="center"
-                android:hint="Product Name"
+                android:hint="Place Name"
                 android:inputType="text"
                 android:textColor="@android:color/white"
                 android:textColorHint="@color/grey"
                 android:textSize="@dimen/_14sdp" />
 
             <EditText
+                android:id="@+id/et_building"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:padding="@dimen/_7sdp"
                 android:maxLength="50"
@@ -78,6 +76,7 @@
                 android:textSize="@dimen/_14sdp" />
 
             <EditText
+                android:id="@+id/et_lane"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:padding="@dimen/_7sdp"
                 android:maxLength="50"

@@ -175,12 +175,16 @@
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/til_address"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:errorEnabled="true"
+                        app:endIconMode="custom"
+                        app:endIconTint="@color/white"
+                        app:endIconDrawable="@drawable/ic_location"
                         app:hintEnabled="false">
 
-                        <EditText
+                        <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/et_address"
                             android:padding="@dimen/_7sdp"
                             android:maxLength="50"

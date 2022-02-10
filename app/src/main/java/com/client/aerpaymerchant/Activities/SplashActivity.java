@@ -15,11 +15,10 @@ public class SplashActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-
-
         new Handler().postDelayed(() -> {
-            Intent i = new Intent(SplashActivity.this, WelcomeActivity.class);
-            startActivity(i);
+            if (isAlreadyLogin())
+                startActivity(new Intent(SplashActivity.this, HomeActivity.class));
+            else startActivity(new Intent(SplashActivity.this, WelcomeActivity.class));
             finish();
         }, SPLASH_TIME_OUT);
     }

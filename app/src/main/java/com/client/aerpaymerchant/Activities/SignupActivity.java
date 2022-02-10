@@ -17,6 +17,7 @@ import com.client.aerpaymerchant.network.NetworkCall;
 import com.client.aerpaymerchant.network.listeners.RetrofitResponseListener;
 import com.client.aerpaymerchant.preference.PreferenceProvider;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
+import com.google.android.material.textfield.TextInputLayout;
 import com.google.gson.JsonObject;
 
 import org.json.JSONObject;
@@ -52,6 +53,9 @@ public class SignupActivity extends BaseActivity {
     @BindView(R.id.mCategoryLl)
     LinearLayout mCategoryLl;
 
+    @BindView(R.id.til_address)
+    TextInputLayout mTilAddress;
+
     @BindView(R.id.mSubCategoryDropdown)
     LinearLayout mSubCategoryDropdown;
 
@@ -67,6 +71,15 @@ public class SignupActivity extends BaseActivity {
         ButterKnife.bind(this);
         setCategoriesDropdown();
         setSubCategoryDropdown();
+
+        mTilAddress.setEndIconOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivityForResult(new Intent(SignupActivity.this, MapsActivity.class),201);
+            }
+        });
+
+
     }
 
     @OnClick({R.id.mConfirmBtn, R.id.mAlreadyHaveAct_tv,R.id.mCategoryLl,R.id.mSubCategoryDropdown})
@@ -217,8 +230,16 @@ public class SignupActivity extends BaseActivity {
 
                     }
 
-
                 }).makeCall();
 
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == 201 && resultCode == RESULT_OK){
+                mEtAddress.setText(data.getStringExtra("ADDRESS"));
+        }
     }
 }

@@ -1,0 +1,24 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=4D:5B:63:81:2B:EA:8E:BE:75:F8:DE:DB:83:F3:F3:1C:DC:6F:54:DF%3Bcom.client.aerpaymerchant
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    com.client.aerpaymerchant
+
+    SHA-1 certificate fingerprint:
+    4D:5B:63:81:2B:EA:8E:BE:75:F8:DE:DB:83:F3:F3:1C:DC:6F:54:DF
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBrg539g2ba-bdbTp3CgXHUYQvxublEs88</string>
+</resources>

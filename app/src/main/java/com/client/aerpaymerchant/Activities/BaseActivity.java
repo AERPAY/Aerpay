@@ -57,4 +57,8 @@ public class BaseActivity extends AppCompatActivity {
         }else
             return false;
     }
+
+    interface onMapResult {
+         void onMapResulting(String name);
+    }
 }
