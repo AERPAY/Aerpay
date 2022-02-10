@@ -91,7 +91,11 @@ class ProductAdapter(
 
     }
     private fun showMenu(pos: Int) {
+
+        dialog = BottomSheetDialog(activity)
+
         val view: View = activity.layoutInflater.inflate(R.layout.menu_layout, null)
+
         val mProductInsightTv = view.findViewById<View>(R.id.mProductInsightTv) as TextView
         val TvDelete = view.findViewById<View>(R.id.tv_delete) as TextView
         mProductInsightTv.setOnClickListener {
@@ -105,8 +109,8 @@ class ProductAdapter(
 
         TvDelete.setOnClickListener {
             onDelete.invoke(pos, list[pos].product.id);
+            dialog?.dismiss()
         }
-        dialog = BottomSheetDialog(activity)
         dialog.setContentView(view)
         dialog.show()
     }
@@ -119,8 +123,8 @@ class ProductAdapter(
     fun removePos(pos : Int) {
 
         list.removeAt(pos)
+
         notifyItemRemoved(pos)
-        dialog?.dismiss()
     }
 
 
