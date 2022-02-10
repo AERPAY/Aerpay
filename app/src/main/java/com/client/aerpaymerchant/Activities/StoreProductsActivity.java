@@ -128,7 +128,7 @@ public class StoreProductsActivity extends BaseActivity {
 
         new NetworkCall(this)
                 .setRequestObject(object)
-                .setEndPoint(APIEndPoints.GET_PRODUCTS)
+                .setEndPoint(APIEndPoints.DELETE_PRODUCTS)
                 .setResponseListener(new RetrofitResponseListener() {
                     @Override
                     public void onError(int statusCode, @NonNull String message, @Nullable JSONObject jsonObject) {
