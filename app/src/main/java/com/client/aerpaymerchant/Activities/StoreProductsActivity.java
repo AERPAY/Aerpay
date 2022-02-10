@@ -48,11 +48,10 @@ public class StoreProductsActivity extends BaseActivity {
         setContentView(R.layout.activity_store_products);
         ButterKnife.bind(this);
 
-        setupData();
     }
 
-    private void setupData() {
-        productAdapter = new ProductAdapter(this,new ArrayList<>(),(pos, id) -> {
+    private void setupData(ArrayList<ProductDetails> list) {
+        productAdapter = new ProductAdapter(this,list,(pos, id) -> {
             deleteProduct(pos, id);
             return null;
         });
@@ -94,7 +93,7 @@ public class StoreProductsActivity extends BaseActivity {
                             ProductResModel resModel = new Gson().fromJson(response,ProductResModel.class);
                             if(resModel.getCode() == 200){
                                     if (resModel.getMsg().size() > 0){
-                                        productAdapter.setList((ArrayList<ProductDetails>) resModel.getMsg());
+                                        setupData((ArrayList<ProductDetails>) resModel.getMsg());
                                     }
                             }else
                                 showToast(jsonObject.getString("msg"));
@@ -139,13 +138,11 @@ public class StoreProductsActivity extends BaseActivity {
                     public void onSuccess(int statusCode, @NonNull JSONObject jsonObject, @NonNull String response) {
                         hideProgressDialog();
                         try{
-                            ProductResModel resModel = new Gson().fromJson(response,ProductResModel.class);
-                            if(resModel.getCode() == 200){
-                                if (resModel.getMsg().size() > 0){
+                            JSONObject resModel = new JSONObject(response);
+                            if(resModel.getInt("code") == 200){
                                     productAdapter.removePos(pos);
-                                }
                             }else
-                                showToast(jsonObject.getString("msg"));
+                                showToast(resModel.getString("msg"));
 
                         }catch (Exception e){
                             e.printStackTrace();

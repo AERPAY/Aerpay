@@ -73,12 +73,7 @@ class ProductAdapter(
 
         val model = list[position]
 
-        if (model.productImage != null && model.productImage.size > 0)
-        Glide.with(activity)
-            .load(APIConstants.BASE_URL+model.productImage[0].image)
-            .thumbnail(0.5f)
-            .error(R.drawable.splash_logo)
-            .into(holder.ivproduct!!);
+
         holder.tvname?.text = model.product.title
         holder.ivDesc?.text = model.product.description
         holder.tvprice?.text = "Rs ${model.product.price}"
@@ -86,6 +81,15 @@ class ProductAdapter(
 
             showMenu(holder.adapterPosition)
         }
+
+        if (model.productImage != null && model.productImage.size > 0)
+            Glide.with(activity)
+                .load(APIConstants.BASE_URL+model.productImage[0].image)
+                .error(R.drawable.splash_logo)
+                .into(holder.ivproduct!!);
+        else  Glide.with(activity)
+            .load(R.drawable.splash_logo)
+            .into(holder.ivproduct!!);
         // Set the text of each item of
         // Recycler view with the list items
 
@@ -123,7 +127,6 @@ class ProductAdapter(
     fun removePos(pos : Int) {
 
         list.removeAt(pos)
-
         notifyItemRemoved(pos)
     }
 
