@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/app_clr">
+
+    <LinearLayout
+        style="@style/app_form_style"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:lineSpacingExtra="@dimen/_7sdp"
+            android:gravity="center"
+            android:textStyle="normal"
+            android:textSize="31dp"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/take_control">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_welcome_img_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ImageView>
+
+
+            <TextView
+                android:lineSpacingExtra="@dimen/_7sdp"
+                android:gravity="center"
+                android:textStyle="normal"
+                android:textSize="20dp"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:text="@string/do_business">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:id="@+id/nextBtn"
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                android:text="Get Started"
+                android:background="@drawable/button_bg"
+                android:layout_width="262dp"
+                android:layout_height="51dp">
+
+
+            </Button>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

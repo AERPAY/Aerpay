@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- drawable/rectangle_1.xml -->
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:width="262dp"
+    android:height="51.81dp"
+    android:viewportWidth="262"
+    android:viewportHeight="51.81">
+
+    <group>
+        <clip-path
+            android:pathData="M18.5028 0H243.497C253.716 0 262 8.284 262 18.5028V33.3051C262 43.5239 253.716 51.8079 243.497 51.8079H18.5028C8.284 51.8079 0 43.5239 0 33.3051V18.5028C0 8.284 8.284 0 18.5028 0Z"
+            tools:ignore="VectorRaster" />
+
+        <group
+            android:translateX="-0.536"
+            android:translateY="-6.781"
+            android:pivotX="131"
+            android:pivotY="25.904"
+            android:scaleX="2.348"
+            android:scaleY="31.203"
+            android:rotation="-58.762"
+            >
+
+            <path
+                android:pathData="M0 0V51.8079H262V0">
+
+                <aapt:attr name="android:fillColor">
+
+                    <gradient
+                        android:type="linear"
+                        android:startX="65.5"
+                        android:startY="25.904"
+                        android:endX="196.5"
+                        android:endY="25.904"
+                        >
+
+                        <item
+                            android:color="#CA6EFF"
+                            android:offset="0"
+                            />
+
+                        <item
+                            android:color="#0C60C9"
+                            android:offset="1"
+                            />
+
+                    </gradient>
+
+                </aapt:attr>
+
+            </path>
+
+        </group>
+
+    </group>
+
+</vector>

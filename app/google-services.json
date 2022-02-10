@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "525656971236",
+    "project_id": "aerpay-1efca",
+    "storage_bucket": "aerpay-1efca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525656971236:android:473cedca797cc88f07d9f1",
+        "android_client_info": {
+          "package_name": "com.client.aerpaymerchant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "525656971236-ddl24vvsodn738o54u3l1er8cioiqvj9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDKx-JdGV3mLm1nn8cfN8mXQu2_g5AX9Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "525656971236-ddl24vvsodn738o54u3l1er8cioiqvj9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525656971236:android:f5b6d4162d3e835c07d9f1",
+        "android_client_info": {
+          "package_name": "com.client.aerpaymerchantdesigns"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "525656971236-ddl24vvsodn738o54u3l1er8cioiqvj9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDKx-JdGV3mLm1nn8cfN8mXQu2_g5AX9Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "525656971236-ddl24vvsodn738o54u3l1er8cioiqvj9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

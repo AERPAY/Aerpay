@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/sign_up_f"
+    android:layout_height="match_parent"
+    android:background="@color/app_clr">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_weight="1.2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:text="Map will render here"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/app_form_style"
+            android:orientation="vertical"
+            android:layout_weight="0.8"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:text="Your Location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <EditText
+                android:drawableLeft="@drawable/ic_circle"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_7sdp"
+                android:maxLength="50"
+                android:background="@drawable/edit_text_bg"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:hint="Product Name"
+                android:inputType="text"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/grey"
+                android:textSize="@dimen/_14sdp" />
+
+            <EditText
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_7sdp"
+                android:maxLength="50"
+                android:background="@drawable/edit_text_bg"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:hint="Building Name"
+                android:inputType="text"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/grey"
+                android:textSize="@dimen/_14sdp" />
+
+            <EditText
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_7sdp"
+                android:maxLength="50"
+                android:background="@drawable/edit_text_bg"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:hint="Lane Name"
+                android:inputType="text"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/grey"
+                android:textSize="@dimen/_14sdp" />
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <Button
+                    android:id="@+id/btn_add_product"
+                    android:paddingLeft="@dimen/_40sdp"
+                    android:paddingRight="@dimen/_40sdp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="normal"
+                    android:textSize="16dp"
+                    android:textAllCaps="false"
+                    android:text="Confirm Location"
+                    android:background="@drawable/light_pink_button"
+                    android:layout_width="260dp"
+                    android:layout_height="50dp">
+
+
+                </Button>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">AerpayMerchantDesigns</string>
+    <string name="step">Step</string>
+    <string name="skip">Skip</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="take_control">Take control of your Online <font color="#FBABFF">store</font></string>
+    <string name="do_business">Do business online with full \n<font color="#FBABFF">freedom</font> as your offline\nstore.</string>
+    <string name="use_power">Use the power of \ncustomer <font color="#FBABFF">data</font></string>
+    <string name="search_power">The powerful<font color="#FBABFF">\nSearch Bar</font></string>
+    <string name="already_have_an_account_log_in">Already have an account? <font color="#FBABFF">  Log In</font> </string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="owner_name">Owner Name</string>
+    <string name="business_name">Business Name</string>
+    <string name="email_id">Email Id</string>
+    <string name="referral_code">Referral Code</string>
+    <string name="confirm">Confirm</string>
+    <string name="mobile_number_email_id">Mobile Number/ Email ID</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="create_an_account">Create An Account</string>
+    <string name="select_a_plan">Select a Plan</string>
+    <string name="help_desk">Help Desk</string>
+    <string name="logout">Logout</string>
+    <string name="referral_text">Share this referral code with your contacts to get 20 % discount on next purchase.\n\n When someone signs up using this code you would receive a 20% discount on your next purhcase.</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="title_activity_query">QueryActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="manage_store">Manage\nStore</string>
+    <string name="manage_orders">Manage\nOrders</string>
+    <string name="create_offers">Create\nOffers</string>
+    <string name="product_category">Product Category</string>
+    <string name="quantity_available">Quantity Available</string>
+    <string name="choose_products_from_list"><u>Choose products from list</u></string>
+    <string name="coupon_code">Coupon Code</string>
+    <string name="out_for_delivery">Out For \nDelivery</string>
+    <string name="easily">Easily search orders or sales data with <font color="#FBABFF">simple</font> english.</string>
+    <string name="please_wait">Please Wait</string>
+    <string name="no_internet">No internet detected!</string>
+    <string name="something_went_wrong">Something went wrong. Please try again!</string>
+    <string name="default_notification_channel_id">aerpaychannel</string>
+
+
+    <string name="made_in">Made in 🇮🇳</string>
+    <string name="let_get_started">Get Started</string>
+    <string name="second_slide_title"><font color="#FAFAFA">New way to manage </font><font color="#FF6838">house expense</font></string>
+    <string name="improve">Improve your sales using <font color="#FBABFF">data</font>  and create exciting offers just like huge companies></string>
+</resources>

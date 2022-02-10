@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:padding="@dimen/_7sdp"
+        android:background="@drawable/order_history_bg"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:id="@+id/img_item"
+                android:src="@drawable/ic_food"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            </ImageView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:gravity="center"
+            android:text="Chicken Fried"
+            android:textSize="18dp"
+            android:maxLines="2"
+            android:lines="2"
+            android:ellipsize="end"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:gravity="center"
+            android:text="Delicious cripsy fried breaded chicken"
+            android:textSize="12dp"
+            android:maxLines="2"
+            android:lines="2"
+            android:ellipsize="end"
+            android:textStyle="normal"
+            android:textColor="#FAFAFA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </TextView>
+
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_price"
+                android:textStyle="normal"
+                android:textSize="16dp"
+                android:textAllCaps="false"
+                android:text="Rs 150"
+                android:background="@drawable/product_btn_bg"
+                android:layout_width="140dp"
+                android:layout_height="43dp">
+
+            </Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/img_menu"
+        android:padding="@dimen/_7sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_gravity="end"
+        android:src="@drawable/ic_dots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</FrameLayout>

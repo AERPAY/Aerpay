@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.client.aerpaymerchant">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_MEDIA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".Activities.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AerpayMerchantDesigns">
+        <activity
+            android:name=".Activities.CouponListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.MapsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.StatsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.TrackOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.OrderDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ProductInsightActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.AddCouponActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.AddProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.OrderHistory"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.StoreProductsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.QueryActivit"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.UpdateProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.ReferralCodeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.SelectPlanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.WelcomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.BaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activities.OrderAcceptRejectActivity"
+            android:parentActivityName=".Activities.HomeActivity" />
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+        <!--
+ Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/splash_logo" />
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+    </application>
+
+</manifest>

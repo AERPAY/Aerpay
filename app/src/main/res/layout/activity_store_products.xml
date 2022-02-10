@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/app_clr">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_clr"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ToolbarTheme">
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_weight="0.4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/ic_back_btn" />
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:paddingLeft="@dimen/_16sdp"
+            android:paddingRight="@dimen/_16sdp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:gravity="right"
+                    android:text="Your Store"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="97dp"
+                    android:layout_height="35dp">
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:checked="true"
+                        android:textColor="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/customSwitch"
+                        app:track="@drawable/custom_track"
+                        android:thumb="@drawable/custom_thumb" />
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="horizontal"
+                android:backgroundTint="#FAFAFA"
+                android:background="@drawable/home_btn_bg"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:src="@drawable/ic_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </ImageView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:layout_weight="1.8"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:background="@null"
+                        android:hint="Search your product"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+                    </EditText>
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:gravity="center"
+                        android:layout_weight="0.2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:src="@drawable/ic_filter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </ImageView>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+            <HorizontalScrollView
+                android:scrollbars="none"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:background="@drawable/home_btn_bg"
+                        android:layout_width="91dp"
+                        android:layout_height="43dp">
+
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@android:color/white"
+                            android:textStyle="normal"
+                            android:textSize="13dp"
+                            android:text="Popular"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </TextView>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:backgroundTint="@android:color/white"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:background="@drawable/home_btn_bg"
+                        android:layout_width="91dp"
+                        android:layout_height="43dp">
+
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:textStyle="normal"
+                            android:textSize="13dp"
+                            android:text="Burgers"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </TextView>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:backgroundTint="@android:color/white"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:background="@drawable/home_btn_bg"
+                        android:layout_width="91dp"
+                        android:layout_height="43dp">
+
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:textStyle="normal"
+                            android:textSize="13dp"
+                            android:text="Frech Fry"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </TextView>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:backgroundTint="@android:color/white"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:background="@drawable/home_btn_bg"
+                        android:layout_width="91dp"
+                        android:layout_height="43dp">
+
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:textStyle="normal"
+                            android:textSize="13dp"
+                            android:text="Chicken"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </TextView>
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </HorizontalScrollView>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_product"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="2"
+                tools:listitem="@layout/item_product"
+               android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/mAddNewProductBtn"
+                android:paddingLeft="@dimen/_40sdp"
+                android:paddingRight="@dimen/_40sdp"
+                android:drawableLeft="@drawable/ic_add"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textAllCaps="false"
+                android:text="Add New Product"
+                android:background="@drawable/light_pink_button"
+                android:layout_width="309dp"
+                android:layout_height="44dp">
+
+
+            </Button>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>

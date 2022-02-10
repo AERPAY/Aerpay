@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/sign_up_f"
+    android:layout_height="match_parent"
+    android:background="@color/app_clr">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_clr"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ToolbarTheme">
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/mMenuImg"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/ic_back_btn" />
+
+
+
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_20sdp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                style="@style/app_form_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="22dp"
+                        android:textColor="@android:color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order #0024">
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:padding="@dimen/_7sdp"
+                    android:weightSum="3"
+                    android:orientation="horizontal"
+                    android:background="@drawable/order_history_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/ic_burger"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:gravity="center|left"
+                        android:textColor="@android:color/white"
+                        android:textSize="14dp"
+                        android:textStyle="normal"
+                        android:text="Double Whooper  x2"
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+
+                    </TextView>
+
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="14dp"
+                        android:textStyle="normal"
+                        android:text="Rs 500"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:textColor="@android:color/white"
+                    android:textSize="18dp"
+                    android:textStyle="normal"
+                    android:text="Address details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:padding="@dimen/_7sdp"
+                    android:orientation="vertical"
+                    android:background="@drawable/order_history_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"
+                        android:textStyle="normal"
+                        android:text="Test sagar"
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+                    <View
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@color/colorAccent"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp">
+
+                    </View>
+
+                    <TextView
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"
+                        android:textStyle="normal"
+                        android:text="21, Silver height, borivali, Mumbai"
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                    </TextView>
+
+                    <View
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@color/colorAccent"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp">
+
+                    </View>
+
+                    <TextView
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"
+                        android:textStyle="normal"
+                        android:text="+91 9898876554"
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:weightSum="2"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:textColor="@android:color/white"
+                        android:textSize="25dp"
+                        android:textStyle="normal"
+                        android:text="Total"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+
+
+                    </TextView>
+
+
+                    <TextView
+                        android:gravity="right"
+                        android:layout_weight="1"
+                        android:textColor="@android:color/white"
+                        android:textSize="25dp"
+                        android:textStyle="normal"
+                        android:text="Rs 500"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_40sdp"
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/ll_accept"
+                        android:layout_weight="1"
+                        android:background="@drawable/home_btn_bg"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp">
+
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@android:color/white"
+                            android:textStyle="normal"
+                            android:textSize="18dp"
+                            android:text="Accept"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </TextView>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_decline"
+                        android:backgroundTint="#FAFAFA"
+                        android:layout_marginLeft="@dimen/_7sdp"
+                        android:layout_weight="1"
+                        android:background="@drawable/home_btn_bg"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp">
+
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@android:color/black"
+                            android:textStyle="normal"
+                            android:textSize="18dp"
+                            android:text="Decline"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </TextView>
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

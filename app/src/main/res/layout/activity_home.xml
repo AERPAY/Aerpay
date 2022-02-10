@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/app_clr">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_clr"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ToolbarTheme">
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_weight="0.4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/mSettingsImg"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/ic_settings" />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_weight="1.3"
+                    android:gravity="center|left"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/white"
+                    android:text="Chillox Burger"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                </TextView>
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:background="@drawable/order_history_bg"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_weight="0.3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/mStatsImg"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_stats" />
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <View
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp">
+
+    </View>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_15sdp"
+        android:paddingLeft="@dimen/_16sdp"
+        android:paddingRight="@dimen/_16sdp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:backgroundTint="#FAFAFA"
+            android:background="@drawable/home_btn_bg"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/ic_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+            </LinearLayout>
+
+            <EditText
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:background="@null"
+                android:hint="Search Orders"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            </EditText>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:text="Overview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <HorizontalScrollView
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/mManageStoreLl"
+                    android:background="@drawable/home_btn_bg"
+                    android:layout_width="149dp"
+                    android:layout_height="62dp">
+
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@android:color/white"
+                        android:textStyle="normal"
+                        android:textSize="16dp"
+                        android:text="@string/manage_store"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </TextView>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mManageOrdersLl"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:backgroundTint="#FAFAFA"
+                    android:background="@drawable/home_btn_bg"
+                    android:layout_width="149dp"
+                    android:layout_height="62dp">
+
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal"
+                        android:textSize="16dp"
+                        android:text="@string/manage_orders"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </TextView>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mCreateOffersLl"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:backgroundTint="#FAFAFA"
+                    android:background="@drawable/home_btn_bg"
+                    android:layout_width="149dp"
+                    android:layout_height="62dp">
+
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal"
+                        android:textSize="16dp"
+                        android:text="@string/create_offers"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </TextView>
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:layout_marginTop="@dimen/_50sdp"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:checkedButton="@id/mPendingLl"
+                android:id="@+id/rg_status"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/mPendingLl"
+                    android:background="@drawable/chip_item_selector"
+                    android:textSize="13dp"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:textColor="@color/text_item_selector"
+                    android:text="Pending"
+                    android:layout_width="102dp"
+                    android:layout_height="34dp">
+
+
+                </RadioButton>
+
+
+                <RadioButton
+                    android:id="@+id/rb_accept"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:background="@drawable/chip_item_selector"
+                    android:textColor="@color/text_item_selector"
+                    android:textSize="13dp"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="Accepted"
+                    android:layout_width="102dp"
+                    android:layout_height="34dp">
+
+
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/rb_indeli"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:background="@drawable/chip_item_selector"
+                    android:textSize="13dp"
+                    android:textColor="@color/text_item_selector"
+                    android:button="@null"
+                    android:gravity="center"   android:text="In Delivery"
+                    android:layout_width="102dp"
+                    android:layout_height="34dp">
+
+
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/rb_completed"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:background="@drawable/chip_item_selector"
+                    android:layout_width="102dp"
+                    android:button="@null"
+                    android:textColor="@color/text_item_selector"
+                    android:gravity="center"
+                    android:textSize="13dp"
+                    android:text="Completed"
+                    android:layout_height="34dp">
+
+
+                </RadioButton>
+
+
+            </RadioGroup>
+        </HorizontalScrollView>
+
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rv_orders"
+    android:layout_marginTop="@dimen/_20sdp"
+    android:layout_marginBottom="@dimen/_20sdp"
+    android:layout_width="match_parent"
+    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+    tools:listitem="@layout/item_order"
+    android:background="@drawable/order_history_bg"
+    android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

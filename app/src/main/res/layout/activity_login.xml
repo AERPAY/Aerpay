@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/sign_up_f"
+    android:layout_height="match_parent"
+    android:background="@color/app_clr">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1.8"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:gravity="center"
+                style="@style/app_form_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/ic_namaste_hand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:textStyle="normal"
+                        android:textSize="29dp"
+                        android:textColor="@android:color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Namaste!!">
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorEnabled="true"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    app:hintEnabled="false">
+
+                    <EditText
+                        android:id="@+id/et_email"
+                        android:padding="@dimen/_7sdp"
+                        android:background="@drawable/edit_text_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:hint="@string/mobile_number_email_id"
+                        android:inputType="text"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@color/grey"
+                        android:textSize="@dimen/_14sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorEnabled="true"
+                    app:hintEnabled="false"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/grey">
+
+                    <EditText
+                        android:id="@+id/et_password"
+                        android:padding="@dimen/_7sdp"
+                        android:maxLength="50"
+                        android:background="@drawable/edit_text_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:hint="@string/enter_password"
+                        android:inputType="textPassword"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@color/grey"
+                        android:textSize="@dimen/_14sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/mloginBtn"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:textAllCaps="false"
+                        android:text="@string/confirm"
+                        android:background="@drawable/light_pink_button"
+                        android:layout_width="260dp"
+                        android:layout_height="50dp">
+
+
+                    </Button>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/mCreateAccountTv"
+                        android:textStyle="normal"
+                        android:textSize="20dp"
+                        android:textColor="@android:color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/create_an_account">
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="0.2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textColor="@android:color/white"
+                android:textStyle="normal"
+                android:textSize="@dimen/_20sdp"
+                android:text="Made in "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <ImageView
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/indian_flag"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

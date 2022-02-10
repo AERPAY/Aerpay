@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/sign_up_f"
+    android:layout_height="match_parent"
+    android:background="@color/app_clr">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_clr"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ToolbarTheme">
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/mMenuImg"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/ic_back_btn" />
+
+
+
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                style="@style/app_form_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="normal"
+                        android:textSize="20dp"
+                        android:textColor="@android:color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order #1234">
+
+                    </TextView>
+
+
+
+                    <TextView
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:textStyle="normal"
+                        android:textSize="20dp"
+                        android:textColor="@android:color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your order is being prepared">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textStyle="normal"
+                        android:textSize="15dp"
+                        android:textColor="#DBDBDB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Arriving in 10-20 min">
+
+                    </TextView>
+
+                    <ProgressBar
+                        android:max="100"
+                        android:progress="45"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:indeterminate="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_20sdp">
+
+                    </ProgressBar>
+
+
+                    <TextView
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:textStyle="normal"
+                        android:textSize="20dp"
+                        android:textColor="@android:color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Driver is headed to restaurant">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textStyle="normal"
+                        android:textSize="15dp"
+                        android:textColor="#DBDBDB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Arriving in 10-20 min">
+
+                    </TextView>
+
+                    <ProgressBar
+                        android:max="100"
+                        android:progress="45"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:indeterminate="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_20sdp">
+
+                    </ProgressBar>
+
+
+                    <TextView
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:textStyle="normal"
+                        android:textSize="20dp"
+                        android:textColor="@android:color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order is being picked up">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textStyle="normal"
+                        android:textSize="15dp"
+                        android:textColor="#DBDBDB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Arriving in 10-20 min">
+
+                    </TextView>
+
+                    <ProgressBar
+                        android:max="100"
+                        android:progress="45"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:indeterminate="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_20sdp">
+
+                    </ProgressBar>
+
+
+                    <TextView
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:textStyle="normal"
+                        android:textSize="20dp"
+                        android:textColor="@android:color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Driver is headed to you">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textStyle="normal"
+                        android:textSize="15dp"
+                        android:textColor="#DBDBDB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Arriving in 10-20 min">
+
+                    </TextView>
+
+
+
+                    <TextView
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:textStyle="normal"
+                        android:textSize="20dp"
+                        android:textColor="@android:color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your order has arrived!">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textStyle="normal"
+                        android:textSize="15dp"
+                        android:textColor="#DBDBDB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Arriving in 10-20 min">
+
+                    </TextView>
+
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

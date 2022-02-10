@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_clr"
+    style="@style/app_form_style">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/plans_bg"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="476dp">
+
+        <TextView
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textColor="@android:color/white"
+            android:textSize="24dp"
+            android:textStyle="normal"
+            android:text="1 Month Plan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        </TextView>
+
+        <View
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="#FBABFF"
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+
+        </View>
+
+        <TextView
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:textStyle="normal"
+            android:text="0% Commission on Sales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        </TextView>
+
+        <TextView
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:textStyle="normal"
+            android:text="Automated Inventory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        </TextView>
+
+        <TextView
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:textStyle="normal"
+            android:text="Individual Product Insight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        </TextView>
+
+        <TextView
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:textStyle="normal"
+            android:text="Free Delivery Partner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        </TextView>
+
+        <TextView
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:textStyle="normal"
+            android:text="Track Sales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        </TextView>
+
+        <TextView
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textColor="@android:color/white"
+            android:textSize="18dp"
+            android:textStyle="normal"
+            android:text="Create Coupons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/mPayBtn"
+                android:textColor="@android:color/white"
+                android:backgroundTint="#CA6EFF"
+                android:textStyle="normal"
+                android:textSize="16dp"
+                android:textAllCaps="false"
+                android:text="Rs 500"
+                android:background="@drawable/plans_btn_bg"
+                android:layout_width="180dp"
+                android:layout_height="35dp">
+
+
+            </Button>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
