@@ -286,11 +286,33 @@
 
 
                     </LinearLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    app:errorEnabled="true"
+                    app:hintEnabled="false">
+
+                    <EditText
+                        android:id="@+id/et_password"
+                        android:padding="@dimen/_7sdp"
+                        android:maxLength="50"
+                        android:background="@drawable/edit_text_bg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:hint="@string/enter_password"
+                        android:inputType="textPassword"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@color/grey"
+                        android:textSize="@dimen/_14sdp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_15sdp"
+
                         app:errorEnabled="true"
                         app:hintEnabled="false">
 

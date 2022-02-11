@@ -50,6 +50,9 @@ public class SignupActivity extends BaseActivity {
     @BindView(R.id.mSubCategoryEt)
     EditText mSubCategoryEt;
 
+    @BindView(R.id.et_password)
+    EditText etPassword;
+
     @BindView(R.id.mCategoryLl)
     LinearLayout mCategoryLl;
 
@@ -204,7 +207,7 @@ public class SignupActivity extends BaseActivity {
         object.addProperty("dob","01-01-2000");
         object.addProperty("country_id","91");
         object.addProperty("role","store");
-        object.addProperty("password","123456");
+        object.addProperty("password",etPassword.getText().toString());
         object.addProperty("device_token",new PreferenceProvider(this).getFCMToken());
 
         new NetworkCall(this)
