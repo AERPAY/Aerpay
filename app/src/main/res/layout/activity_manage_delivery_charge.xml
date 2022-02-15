@@ -181,6 +181,7 @@
             android:layout_height="wrap_content">
 
             <Button
+                android:id="@+id/mConfirmBtn"
                 android:background="@drawable/light_pink_button"
                 android:textColor="@android:color/white"
                 android:textStyle="normal"
