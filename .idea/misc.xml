@@ -11,6 +11,15 @@
         <entry key="..\:/Android Handler/Upwork/AerpayMerchant/app/src/main/res/layout/activity_welcome.xml" value="0.19739583333333333" />
         <entry key="..\:/Android Handler/Upwork/AerpayMerchant/app/src/main/res/layout/fragment_maps.xml" value="0.5" />
         <entry key="..\:/Android Handler/Upwork/AerpayMerchant/app/src/main/res/layout/item_product.xml" value="0.19739583333333333" />
+        <entry key="app/src/main/res/drawable/ic_scooter.xml" value="0.19635416666666666" />
+        <entry key="app/src/main/res/layout/activity_add_coupon.xml" value="0.18020833333333333" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.18020833333333333" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.18020833333333333" />
+        <entry key="app/src/main/res/layout/activity_manage_delivery_charge.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_order_accept_reject.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_product_insight.xml" value="0.18020833333333333" />
+        <entry key="app/src/main/res/layout/activity_settings.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_stats.xml" value="0.18020833333333333" />
       </map>
     </option>
   </component>

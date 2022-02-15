@@ -78,6 +78,7 @@ public class HomeActivity extends BaseActivity {
         ButterKnife.bind(this);
 
         mSettingsImg.setOnClickListener(v -> {
+            startActivity(new Intent(HomeActivity.this,SettingsActivity.class));
 
         });
 

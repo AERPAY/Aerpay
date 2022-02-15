@@ -34,7 +34,7 @@ public class SettingsActivity extends BaseActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.mUpdateProfileLl, R.id.mHelpDeskLl, R.id.mDiscountLl})
+    @OnClick({R.id.mUpdateProfileLl, R.id.mHelpDeskLl, R.id.mDiscountLl,R.id.mManageDeliveryLl})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.mUpdateProfileLl:
@@ -42,6 +42,9 @@ public class SettingsActivity extends BaseActivity {
                 break;
             case R.id.mHelpDeskLl:
                 startActivity(new Intent(SettingsActivity.this, QueryActivit.class));
+                break;
+            case R.id.mManageDeliveryLl:
+                startActivity(new Intent(SettingsActivity.this, ManageDeliveryChargeActivity.class));
                 break;
             case R.id.mDiscountLl:
                 break;

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SettingsActivity"
+    android:background="@color/app_clr"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/app_clr"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ToolbarTheme">
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/mMenuImg"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:src="@drawable/ic_back_btn" />
+
+
+
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            style="@style/app_form_style"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:textColor="@android:color/white"
+                android:text="Manage Delivery Charges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:lineSpacingExtra="1.2dp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:alpha="0.5"
+                android:textSize="16dp"
+                android:textColor="@android:color/white"
+                android:text="Configure delivery charges to be calculated during checkout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:lineSpacingExtra="1.2dp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@android:color/white"
+                android:text="Calculation will be based on Kilometers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:visibility="gone"
+                android:lineSpacingExtra="1.2dp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@android:color/white"
+                android:text="Flat Base Price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:visibility="gone"
+                android:lineSpacingExtra="1.2dp"
+                android:alpha="0.5"
+                android:textSize="16dp"
+                android:textColor="@android:color/white"
+                android:text="Lets you change a fixed base price for delivery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <EditText
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_7sdp"
+                android:background="@drawable/edit_text_bg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:hint="Enter price"
+                android:inputType="numberDecimal"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/grey"
+                android:textSize="@dimen/_14sdp" />
+
+
+            <TextView
+                android:lineSpacingExtra="1.2dp"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@android:color/white"
+                android:text="Shipping fee per km"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:lineSpacingExtra="1.2dp"
+                android:alpha="0.5"
+                android:textSize="16dp"
+                android:textColor="@android:color/white"
+                android:text="If you set 0 here, no delivery fee would be charged to the customer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <EditText
+                android:layout_marginTop="@dimen/_10sdp"
+                android:padding="@dimen/_7sdp"
+                android:background="@drawable/edit_text_bg"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="center"
+                android:hint="Enter price"
+                android:inputType="numberDecimal"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/grey"
+                android:textSize="@dimen/_14sdp" />
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:background="@drawable/light_pink_button"
+                android:textColor="@android:color/white"
+                android:textStyle="normal"
+                android:textSize="16dp"
+                android:textAllCaps="false"
+                android:text="@string/confirm"
+                android:layout_width="143dp"
+                android:layout_height="40dp">
+
+
+            </Button>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
