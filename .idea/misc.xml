@@ -3,13 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android Handler/Upwork/AerpayMerchant/app/src/main/res/drawable/button_bg.xml" value="0.21354166666666666" />
+        <entry key="..\:/Android Handler/Upwork/AerpayMerchant/app/src/main/res/drawable/button_bg_purple.xml" value="0.21354166666666666" />
+        <entry key="..\:/Android Handler/Upwork/AerpayMerchant/app/src/main/res/drawable/light_pink_button.xml" value="0.21354166666666666" />
         <entry key="..\:/Android Handler/Upwork/AerpayMerchant/app/src/main/res/layout/activity_add_coupon.xml" value="0.33" />
         <entry key="..\:/Android Handler/Upwork/AerpayMerchant/app/src/main/res/layout/activity_add_product.xml" value="0.19739583333333333" />
+        <entry key="..\:/Android Handler/Upwork/AerpayMerchant/app/src/main/res/layout/activity_home.xml" value="0.19739583333333333" />
+        <entry key="..\:/Android Handler/Upwork/AerpayMerchant/app/src/main/res/layout/activity_login.xml" value="0.19739583333333333" />
         <entry key="..\:/Android Handler/Upwork/AerpayMerchant/app/src/main/res/layout/activity_maps.xml" value="0.33" />
         <entry key="..\:/Android Handler/Upwork/AerpayMerchant/app/src/main/res/layout/activity_signup.xml" value="0.18" />
         <entry key="..\:/Android Handler/Upwork/AerpayMerchant/app/src/main/res/layout/activity_store_products.xml" value="0.19739583333333333" />
         <entry key="..\:/Android Handler/Upwork/AerpayMerchant/app/src/main/res/layout/activity_welcome.xml" value="0.19739583333333333" />
         <entry key="..\:/Android Handler/Upwork/AerpayMerchant/app/src/main/res/layout/fragment_maps.xml" value="0.5" />
+        <entry key="..\:/Android Handler/Upwork/AerpayMerchant/app/src/main/res/layout/fragment_welcome_frg1.xml" value="0.19739583333333333" />
         <entry key="..\:/Android Handler/Upwork/AerpayMerchant/app/src/main/res/layout/item_product.xml" value="0.19739583333333333" />
         <entry key="app/src/main/res/drawable/ic_scooter.xml" value="0.19635416666666666" />
         <entry key="app/src/main/res/layout/activity_add_coupon.xml" value="0.18020833333333333" />

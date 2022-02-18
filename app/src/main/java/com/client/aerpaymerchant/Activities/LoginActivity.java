@@ -105,8 +105,11 @@ public class LoginActivity extends BaseActivity {
                         try{
                             LoginResModel resModel = new Gson().fromJson(response,LoginResModel.class);
                             if(resModel.getCode() == 200){
+
                                 new PreferenceProvider(LoginActivity.this).saveUser(resModel.getMsg().getUser());
                                 new PreferenceProvider(LoginActivity.this).saveStoreID(resModel.getMsg().getStores().get(0).getStoreLocation().getStoreId());
+
+
                                 startActivity(new Intent(LoginActivity.this,HomeActivity.class));
                                 finish();
                             }else

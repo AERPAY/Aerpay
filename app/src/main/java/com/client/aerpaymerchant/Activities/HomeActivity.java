@@ -1,13 +1,17 @@
 package com.client.aerpaymerchant.Activities;
 
+import static android.content.ContentValues.TAG;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -24,7 +28,10 @@ import com.client.aerpaymerchant.network.APIEndPoints;
 import com.client.aerpaymerchant.network.NetworkCall;
 import com.client.aerpaymerchant.network.listeners.RetrofitResponseListener;
 import com.client.aerpaymerchant.preference.NotificationUtils;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.analytics.FirebaseAnalytics;
+import com.google.firebase.messaging.FirebaseMessaging;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonSyntaxException;
@@ -84,6 +91,19 @@ public class HomeActivity extends BaseActivity {
 
         setupData();
 //        SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm", Locale.getDefault());
+        FirebaseMessaging.getInstance().subscribeToTopic("/topics/store"+getStoreId())
+                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if (!task.isSuccessful()) {
+                            String msg = "Notification having some issues";
+                            Log.d(TAG, msg);
+                            Toast.makeText(HomeActivity.this, msg, Toast.LENGTH_SHORT).show();
+                        }
+
+                    }
+                });
+
 
     }
 

@@ -19,6 +19,7 @@ class OrderAdapter(
         list.addAll(mlist);
         notifyDataSetChanged()
     }
+
     inner class MyView  // parameterised constructor for View Holder class
     // which takes the view as a parameter
         (view: ItemOrderBinding) : RecyclerView.ViewHolder(view.root) {
